@@ -1,6 +1,6 @@
 # pop_Squema
 android/intellij/kotlin...
-app em kotlin para criar procedimento operacionai padroe os POPs em dessenvovilmento
+app em kotlin para criar procedimento operacional padrão os POPs em dessenvovilmento
 IDE - intellij idea
 # Gradler:
 plugins {
