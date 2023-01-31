@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="Criar"
+          android:icon="@drawable/baseline_create_new_folder_24"
+          android:id="@+id/criar" tools:ignore="HardcodedText"/>
+    <item android:title="Pastas"
+          android:icon="@drawable/baseline_folder_copy_24"
+          android:id="@+id/pastas" tools:ignore="HardcodedText"/>
+    <item android:title="Lixeira"
+          android:icon="@drawable/baseline_folder_delete_24"
+          android:id="@+id/lixeira"
+          tools:ignore="HardcodedText"/>
+</menu>

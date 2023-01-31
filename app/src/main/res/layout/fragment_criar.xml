@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context=".ui.fragment.CriarFragment">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+    android:id="@+id/cardPasso"/>
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" android:layout_gravity="center">
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent" app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5">
+            <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="15dp"/>
+            <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="51dp" app:srcCompat="@android:drawable/ic_input_add"
+                    android:id="@+id/imageView" android:contentDescription="@string/todo" android:clickable="true"/>
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+            <TextView
+                    android:text="@string/descriçao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/descriçao"
+                    tools:text="descriçao"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:autoSizeTextType="uniform"
+                    android:gravity="center" android:contextClickable="true" android:clickable="true"
+                    android:visibility="visible" tools:visibility="visible" android:minHeight="48dp"/>
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="32dp" app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="32dp"
+                        tools:ignore="MissingConstraints">
+                    <Button
+                            android:text="@string/novo_passo"
+                            android:layout_width="219dp"
+                            android:gravity="center"
+                            android:layout_height="match_parent" android:id="@+id/buttonNovopasso"/>
+                </LinearLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"/>
+            <Button
+                    android:text="@string/salvar_pop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:id="@+id/buttonSalvarpop"
+            />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
